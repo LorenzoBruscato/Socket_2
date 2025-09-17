@@ -46,6 +46,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
         });
 
         jBFechar.setText("Fechar");
+        jBFechar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBFecharActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -89,6 +94,10 @@ public class FrmPrincipal extends javax.swing.JFrame {
             System.err.println("Attempted to read a bad URL: ");
         }
     }//GEN-LAST:event_jBAbrirActionPerformed
+
+    private void jBFecharActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBFecharActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jBFecharActionPerformed
 
     /**
      * @param args the command line arguments
